@@ -1,0 +1,429 @@
+cm{
+   background-color: white;
+   text-align: center;
+   color: Darkgreen;
+   font-size: 200%;
+   font-family: "Garamond";
+}
+
+h1{
+   background-color: lightgrey;
+   text-align: center;
+   color: Darkgreen;
+   font-size: 500%;
+   font-family: "Garamond";
+}
+h2{
+   background-color: white;
+   text-align: center;
+   color: Darkgreen;
+   font-size: 100%;
+   font-family: "Garamond";
+}
+h3{
+  background-color: white;
+  text-align: left;
+  color: Green;
+  font-size: 24px;
+  font-family: "Garamond";
+}
+h4{
+  background-color: white;
+  text-align: center;
+  color: Green;
+  font-size: 24px;
+  font-family: "Garamond";
+}
+c1{
+   background-color: white;
+   margin-right:10%;
+   color: orange;
+   font-size: 8px bold;
+   font-family: "Garamond"
+}
+t1{
+   background-color: white;
+   color: Green;
+   font-size: 12px bold;
+   font-family: "Garamond"
+}
+
+ul2{
+   list-style: none;
+   margin-top: 4px;
+   background-color: white;
+   color: Green;
+   font-size: 12px bold;
+   font-family: "Garamond"
+}
+
+.dropBtn {
+  background-color: white;
+  color: green;
+  font-size: 32px;
+  margin-right:10px;
+  border: none;
+}
+
+.dropMenu {
+  margin-right: 94%;
+  position: relative;
+  display: inline-block;
+}
+
+.dropMenu-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropMenu-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropMenu-content a:hover {background-color: #ddd;}
+
+.dropMenu:hover .dropMenu-content {display: block;}
+
+.dropMenu:hover .dropBtn {background-color: #3e8e41;}
+
+.aboutBtn {
+  background-color: lightGreen;
+  border: none;
+  color: green;
+  padding: 10% 2%;
+  width: 100%;
+  cursor: pointer;
+  font-family: "Garamond";
+  font-size: 20px;
+ 
+}
+
+.aboutBtn:hover {
+  background-color: lightBlue;
+}
+
+.conBtn {
+  background-color: lightGreen;
+  border: none;
+  color: green;
+  padding: 10% 2%;
+  width: 100%;
+  cursor: pointer;
+  font-family: "Garamond";
+  font-size: 20px;
+ 
+}
+
+.conBtn:hover {
+  background-color: lightBlue;
+}
+
+b{
+   background-color: lightgrey;
+   text-decoration: none;
+   text-align: right;
+   color: Darkgreen;
+   font-size: 40px;
+   font-family: "Garamond";
+}
+
+.form1 {
+  display:flex;
+  flex-direction:row;
+  padding:0.5%;
+  box-shadow: 0 0 5px 5px #999;
+  position:relative;
+  width: 40%;
+  margin-left:5%;
+  margin-top: 3%;
+}
+
+.input {
+  border:none;  
+  background: #fff;
+  width: 100%;
+}
+
+.btn1 {
+  background-color: orange;
+  border: none;
+  color: green;
+  padding: 2% 2%;
+  width: 8%;
+  cursor: pointer;
+ 
+}
+
+.btn1:hover {
+  background-color: darkGreen;
+}
+
+#searchBar{
+  text-align: left;
+  margin-right: auto;
+  width: 40%;
+  height: 38px;
+}
+.searchIcon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: 100%;
+  }
+
+.icon {
+  float: left;
+  display: inline;
+  margin-left: 24%;
+  margin-right: auto;
+  width: 6%;
+  height: 6%;
+  position:relative;
+}
+
+.btn2 {
+  background-color: white;
+  border: none;
+  color: orange;
+  font-size: 70%;
+  width = 20%;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn2:hover {
+  background-color: darkOrange;
+}
+
+#box-0 {
+  float: centre;
+  width: 30%; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+capBad {
+   background-color: none;
+   text-decoration: none;
+   text-align: right;
+   color: white;
+   font-size: 36px;
+   font-family: "Garamond"
+}
+
+ul1{
+   list-style: none;
+   color: white;
+}
+
+.cbImage {
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  width: 30%;
+  }
+
+
+.column {
+  float: left;
+  width: 80%;
+  padding: 0 10px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+}
+.cards__item {
+  display: flex;
+  padding: 1rem;
+  @media(min-width: 40rem) {
+    width: 100%;
+  }
+  @media(min-width: 56rem) {
+    width: 33.3333%;
+  }
+}
+
+.btn3 {
+  background-color: orange;
+  border: none;
+  color: green;
+  padding: 2% 2%;
+  width: 25%;
+  margin-top:5%;
+  align:left;
+  cursor: pointer;
+  font-family: "Garamond";
+  font-size: 100%;
+ 
+}
+
+.btn3:hover {
+  background-color: darkGreen;
+}
+
+#TotalPrice {
+  display:flex;
+  flex-direction:row;
+  border: none;
+  padding:2%;
+  box-shadow: 0px 0px 5px 0px;
+  width: 42%;
+  margin-top: 5%;
+}
+
+.m1{
+  z-index:3;
+  display:none;
+  padding-top:100px;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.4);
+}
+
+.m2{
+  margin:auto;
+  background-color:white;
+  position:relative;
+  padding:0;
+  outline:0;
+  width:60%;
+  box-shadow: 0px 0px 5px 0px;
+}
+
+.m3{
+  display:table;
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+}
+.m4{
+  display:table;
+  padding: 4%;
+  text-align: left;
+  background-color: white;
+}
+
+.modalButton{
+  padding:4px 8px;
+  color:green;
+  background-color:orange;
+  cursor:pointer;
+  position: absolute;
+  right:0;
+  top:0;
+}
+
+.inCVC {
+  border: none;
+  box-shadow: 0px 0px 5px 0px;
+  width:11%;
+}
+
+.inName {
+  border: none;
+  box-shadow: 0px 0px 5px 0px;
+  width:40%;
+}
+
+.inNum {
+  border: none;
+  box-shadow: 0px 0px 5px 0px;
+  width:40%;
+}
+
+.inExp{
+  border: none;
+  box-shadow: 0px 0px 5px 0px;
+  width:13%;
+}
+
+p2{
+  font-family:"Garamond";
+  color: Green;
+  padding: 2%;
+}
+
+form2{
+  align:center;
+}
+
+.col2 {
+  float: left;
+  width: 80%;
+  padding: 10px;
+  height: 100%; /* Should be removed. Only for demonstration */
+}
+.col3 {
+  float: right;
+  width: 40%;
+  padding: 10px;
+  height: 100%; /* Should be removed. Only for demonstration */
+}
+
+.m5{
+  margin:auto;
+  background-color:#fff;
+  position:relative;
+  padding:0;
+  outline:0;
+  width:40%;
+  box-shadow: 0px 0px 5px 0px;
+}
+
+/* Footer */
+
+.footer {
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 6%;
+  background-color: lightBlue;
+}
+
+.footer-content-right {
+  padding-right:40px;
+  float:right;
+}
+
+.GitHubIcon {
+  height:40px;
+  margin-left:20px;
+  margin-top:5px;
+}
+
+.GitHubIcon:hover {
+  background-color:cyan ;
+}
