@@ -1,0 +1,45 @@
+function cbSearch() {
+  
+  var input = document.getElementById("cbFind");
+  var CF = input.value.toUpperCase();
+  var ul = document.getElementById("cbList");
+  var li = ul.getElementsByTagName("li");
+
+  for (i = 0; i < li.length; i++) {
+    var capBad = li[i].getElementsByTagName("capBad")[0];
+    if (capBad.innerHTML.toUpperCase().indexOf(CF) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+function addItem(text, n) {
+  
+  var li = document.createElement("li");
+  li.innerHTML = text + " £" + n;
+  
+  if(n != 0){
+  document.getElementById("Basket").appendChild(li);
+  }
+  
+  var total = document.getElementById("TotalPrice").value;
+  var n_total = Number(total) + Number(n);
+  document.getElementById("TotalPrice").value = n_total;
+  
+}
+
+function removeItem() {
+  
+  document.getElementById("TotalPrice").value = 0;
+  var item = document.getElementById('Basket');
+  li = item.getElementsByTagName("li");
+  
+  for (i = 0; i <= li.length; i++) {
+    item.removeChild(item.lastElementChild);
+  }
+  
+}
+
+
