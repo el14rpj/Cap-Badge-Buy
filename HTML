@@ -1,0 +1,276 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<header>
+  <title> Cap Badge Buy </title>
+</header>
+
+<body style="background-color:white;">
+
+  <!-- Banner -->
+
+  <div class="dropMenu">
+    <button class="dropBtn"><i class="fa fa-home"></i></button>
+    <div class="dropMenu-content">
+
+      <!---->
+
+      <button class="aboutBtn" onclick="document.getElementById('AM').style.display='block'">About</button>
+
+      <button class="conBtn" onclick="document.getElementById('CM').style.display='block'">Contact</button>
+    </div>
+  </div>
+
+  <!-- About Modal -->
+  <div id="AM" class="m1">
+    <div class="m2">
+      <div class="m3">
+        <span onclick="document.getElementById('AM').style.display='none'" class="modalButton">&times</span>
+        <cm>A page where you can buy a Cap Badge for your beret!</cm>
+      </div>
+    </div>
+  </div>
+  <!---->
+
+  <!-- Contact Modal -->
+  <div id="CM" class="m1">
+    <div class="m2">
+      <div class="m3">
+        <span onclick="document.getElementById('CM').style.display='none'" class="modalButton">&times</span>
+        <table>
+          <tr>
+            <td>
+              <cm>Author: Rowan Parker-Jervis</cm>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <cm>Email: r.parker.jervis@gmail.com</cm>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!---->
+
+  <!-- SearchBar -->
+  <img class="icon" src="https://m.media-amazon.com/images/I/71WfFFuee1L._AC_UX679_.jpg" />
+  <form class="form1">
+    <input class="input" type="text" id="cbFind" placeholder="Search for a Cap Badge...">
+    <button type="button" onclick="cbSearch()" class="btn1"><i class="fa fa-search"></i></button>
+  </form>
+  <!---->
+
+  <!-- Heading -->
+  <div id="title" class="box">
+    <h1>Cap Badge</h1>
+  </div>
+  <!----->
+
+  <div style="float: left; width: 50%;">
+    <!-- Cap Badge list -->
+    <ul1 id="cbList">
+
+      <!-- Cap Badge 1 -->
+      <li>
+        <capBad href="#" tag="RE">Corps of Royal Engineers
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <h2>Royal Engineers</h2>
+                <img class="cbImage" src="https://m.media-amazon.com/images/I/61NwhU3WYPL._AC_.jpg" />
+                <button class="btn2"><i class="fa fa-shopping-basket" onclick="addItem('RE',5.99)"></i></button>
+                <c1>£5.99</c1>
+              </div>
+            </div>
+        </capBad>
+      </li>
+      <!---->
+
+      <!-- Cap Badge 2 -->
+      <li>
+        <capBad href="#" tag="RCS"> Royal Corps of Signals
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <h2>Royal Corps of Signals</h2>
+                <img class="cbImage" src="https://m.media-amazon.com/images/I/71TmKFhCm1L._AC_SY879_.jpg" />
+                <button class="btn2"><i class="fa fa-shopping-basket" onclick="addItem('RCS',6.55)"></i></button>
+                <c1>£6.55</c1>
+              </div>
+            </div>
+        </capBad>
+      </li>
+      <!---->
+
+      <!-- Cap Badge 3 -->
+      <li>
+        <capBad href="#" tag="RLC"> Royal Logistic Corps
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <h2>Royal Logistic Corps</h2>
+                <img class="cbImage" src="https://m.media-amazon.com/images/I/81k3gyM1h5L._AC_UX679_.jpg" />
+                <button class="btn2"><i class="fa fa-shopping-basket" onclick="addItem('RLC',5.89)"></i></button>
+                <c1>£5.89</c1>
+              </div>
+            </div>
+        </capBad>
+      </li>
+      <!---->
+
+      <!-- Cap Badge 4 -->
+      <li>
+        <capBad href="#" tag="RAMC"> Royal Army Medical Corps
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <h2>Royal Army Medical Corps</h2>
+                <img class="cbImage" src="https://m.media-amazon.com/images/I/510n934S-eL._AC_.jpg" />
+                <button class="btn2" onclick="addItem('RAMC',6.99)"><i class="fa fa-shopping-basket"></i></button>
+                <c1>£6.99</c1>
+              </div>
+            </div>
+        </capBad>
+      </li>
+      <!---->
+
+      <!-- Cap Badge 5 -->
+      <li>
+        <capBad href="#" tag="AAC"> Army Air Corps
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <h2>Army Air Corps</h2>
+                <img class="cbImage" src="https://images-eu.ssl-images-amazon.com/images/I/81j01dvY9bL.__AC_SX300_SY300_QL70_ML2_.jpg" />
+                <button class="btn2" onclick="addItem('AAC',6.05)"><i class="fa fa-shopping-basket"></i></button>
+                <c1>£6.05</c1>
+              </div>
+            </div>
+        </capBad>
+      </li>
+      <!---->
+
+      <!-- Cap Badge 6 -->
+      <li>
+        <capBad href="#" tag="REME"> Royal Electrical and Mechanical Engineers
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <h2>Royal Electrical and Mechanical Engineers</h2>
+                <img class="cbImage" src="https://m.media-amazon.com/images/I/81coJAAZ0AL._AC_SX679_.jpg" />
+                <button class="btn2" onclick="addItem('REME',6.39)"><i class="fa fa-shopping-basket"></i></button>
+                <c1>£6.39</c1>
+              </div>
+            </div>
+        </capBad>
+      </li>
+      <!---->
+
+      <!-- Cap Badge 7 -->
+      <li>
+        <capBad href="#" tag="IC"> Intelligence Corps
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <h2>Intelligence Corps</h2>
+                <img class="cbImage" src="https://m.media-amazon.com/images/I/71SCJefM59L._AC_SX679_.jpg" />
+                <button class="btn2" onclick="addItem('IC',5.85)"><i class="fa fa-shopping-basket"></i></button>
+                <c1>£5.85</c1>
+              </div>
+            </div>
+        </capBad>
+      </li>
+      <!---->
+
+      <!--Placeholder-->
+      <li>
+        <capBad href="#" tag="IC"> Corps of Royal Engineers Royal Corps of Signals Royal Logistic Corps Royal Army Medical Corps Army Air Corps Royal Electrical and Mechanical Engineers Intelligence Corps
+        </capBad>
+      </li>
+      </list>
+      <!---->
+
+  
+  
+  </div>
+  <div style="float: right; width: 40%;">
+    <h3>Shopping Basket </h3>
+    <table>
+      <tr>
+        <td>
+          <t1> Total (£): </t1>
+        </td>
+        <td><input type="value" id="TotalPrice" Size=8> </td>
+      </tr>
+      <table>
+        <ul2 id="Basket"> </ul2>
+        <button onclick="removeItem()" class="btn3">
+          Empty Basket</button>
+        <button onclick="document.getElementById('buyM').style.display='block'" class="btn3">Check-out</button>
+  </div>
+
+  <!-- Check-out Modal -->
+  <div id="buyM" class="m1">
+    <div class="m5">
+      <div class="m4">
+        <span onclick="document.getElementById('buyM').style.display='none'" class="modalButton">&times</span>
+        <div class="row">
+          <div class="col2">
+            <h4>Card Details</h4>
+            <form onsubmit="document.getElementById('BM').style.display='block'" action="https://codepen.io/rowan-pj/pen/VwQXjOg">
+              <div>
+              </div>
+              <div>
+                <p2>Card Name </p2>
+                <input class="inName" type="text" id="inputName" required>
+              </div>
+              <p2></p2>
+              <div>
+              </div>
+              <div>
+                <p2>Card Number </p2>
+                <input class="inNum" type="number" id="inputNumber" required>
+              </div>
+              <p2></p2>
+              <div>
+              </div>
+              <div>
+                <p2>CVC </p2>
+                <input class="inCVC" type="number" id="inputCVC" required>
+              </div>
+              <p2></p2>
+              <div>
+              </div>
+              <div>
+                <p2 class="lblExp">Expiry </p2>
+                <input class="inExp" type="number" id="inputMonth" required>
+                <input class="inExp" type="number" id="inputYear" required>
+              </div>
+              <button type="submit" class="btn3">Buy</button>
+            </form>
+          </div>
+          <div class="col3">
+            <p2 class="lblExp">NO RETURNS! </p2>
+          </div>
+        </div>
+
+        <!-- Buy Modal -->
+        <div id="BM" class="m1">
+          <div class="m5">
+            <div class="m4">
+              <cm>Bought!</cm>
+            </div>
+          </div>
+        </div>
+        <!---->
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-content-right">
+      <a href="https://github.com/el14rpj/Cap-Badge-Buy"><img src="https://logos-download.com/wp-content/uploads/2016/09/GitHub_logo.png" class="GitHubIcon"></a>
+    </div>
+</body>
